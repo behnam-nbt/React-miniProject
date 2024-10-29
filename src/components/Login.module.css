@@ -1,0 +1,108 @@
+.mainContainer {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContainer {
+    background-color: #FFFFFF;
+    width: 470px;
+    height: 523px;
+    padding: 1rem;
+    border-radius: 40px;
+    border: 1px solid gray;
+}
+
+.loginContainer .title {
+    text-align: center;
+}
+
+.loginContainer .title h2 {
+    margin-top: 1rem;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.title img {
+    width: 80px;
+    height: 84.47px;
+}
+
+.inputBox {
+    margin: 2rem auto;
+    width: 400px;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 53px;
+    border-radius: 15px;
+    padding: 22px 15px;
+    border: none;
+    background-color: #F2F2F2;
+    margin: 0.5rem 0;
+}
+
+.inputBox input:focus {
+    border: none !important;
+}
+
+::placeholder {
+    font-weight: 400;
+    color: #282828;
+    font-size: 1rem;
+}
+
+.inputBox button {
+    width: 100%;
+    border: none;
+    background: none;
+    background-color: #55A3F0;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.navigate {
+    margin-top: 1rem;
+}
+
+.navigate a {
+    text-decoration: none;
+    color: #3A8BED;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@media(max-width: 480px) {
+    .loginContainer {
+        width: 300px;
+        height: auto;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+
+    .inputBox input {
+        height: 0;
+    }
+
+    .loginContainer .title h2 {
+        font-size: 20px;
+    }
+
+    .title img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .inputBox button {
+        padding: 5px;
+    }
+}

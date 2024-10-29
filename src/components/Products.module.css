@@ -1,0 +1,180 @@
+.container {
+    margin: 28px 150px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border: solid 1px #E4E4E4;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 5px 15px;
+}
+
+.search svg {
+    font-size: 1.5rem;
+}
+
+::placeholder {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.container .search input {
+    width: 90%;
+    border: none;
+    border-left: 1px solid #E4E4E4;
+    outline: none;
+    height: 58px;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.headTitle img {
+    width: 30px;
+    height: 30px;
+}
+
+.headTitle h4 {
+    color: #282828;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.headTitle button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #55A3F0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.tableContainer {
+    width: 100%;
+    min-height: 737px;
+    margin-top: 1rem;
+    border: 1px solid #E4E4E4;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow: hidden;
+}
+
+thead {
+    width: 100%;
+    background-color: #F2F2F2;
+    height: 70px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-size: 14px;
+    font-weight: 500;
+    color: #282828;
+}
+
+td{
+    font-size: 12px;
+    font-weight: 400;
+    color: #282828;
+}
+.actions {
+    display: flex;
+    justify-content: space-evenly;
+}
+.remove svg,.edit svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.remove svg {
+    color: red;
+}
+.edit svg {
+    color: #4cd137;
+}
+
+/* tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+} */
+
+/* .column1,
+.column2,
+.column3,
+.column4,
+.column5 {
+    width: 20%;
+}
+
+.column5 {
+    width: 10%;
+} */
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+    tr {
+        margin-bottom: 15px;
+    }
+
+    th,td {
+        font-size: 10px;
+    }
+    
+    .headTitle h4{
+        font-size: 1rem;
+    }
+
+    .headTitle img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .headTitle button{
+        padding: 5px 10px;
+    }
+
+    .container {
+        margin: 0.5rem 0.2rem;
+    }
+
+    .search {
+        width: 100%;
+    }
+}
